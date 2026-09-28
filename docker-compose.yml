@@ -1,0 +1,8 @@
+services:
+  spark:
+    image: spark:4.2.0-python3
+    container_name: nordeus-spark
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: ["sleep", "infinity"]

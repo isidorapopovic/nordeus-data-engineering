@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: mart_player_stats
+    description: "Gold player statistics."
+
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+      - name: username
+        tests:
+          - not_null
+
+      - name: country
+
+      - name: registration_date
+        tests:
+          - not_null
+
+      - name: total_playtime
+
+      - name: total_win_ratio
+
+      - name: fav_map_win_ratio
+
+      - name: avg_matches_per_session

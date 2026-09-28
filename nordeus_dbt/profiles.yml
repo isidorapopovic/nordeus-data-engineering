@@ -1,0 +1,8 @@
+nordeus_dbt:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: nordeus.duckdb
+      threads: 4

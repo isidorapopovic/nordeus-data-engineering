@@ -1,0 +1,52 @@
+# Python environments
+.conda/
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# AWS / credentials
+.aws/
+credentials
+
+# Logs
+logs/
+*.log
+
+# Spark generated data
+data/bronze/
+data/silver/
+data/gold/
+data/quarantine/
+
+# Keep raw sample data only if you intentionally want it in GitHub
+# data/raw/
+
+# DuckDB databases
+*.duckdb
+*.duckdb.wal
+
+# dbt generated files
+nordeus_dbt/target/
+nordeus_dbt/logs/
+nordeus_dbt/dbt_packages/
+
+# General build artifacts
+artifacts/
+
+# OS files
+.DS_Store
+Thumbs.db
